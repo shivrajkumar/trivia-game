@@ -60,8 +60,8 @@ function AuthStack() {
 function AppStack() {
   return (
     <Stack.Navigator screenOptions={{ headerShown: false }}>
-      <Stack.Screen name="LeaderBoardScreen" component={LeaderBoardScreen} />
       <Stack.Screen name="SelectionScreen" component={SelectionScreen} />
+      <Stack.Screen name="LeaderBoardScreen" component={LeaderBoardScreen} />
       <Stack.Screen name="QuizScreen" component={QuizScreen} />
       <Stack.Screen name="ResultScreen" component={ResultScreen} />
     </Stack.Navigator>

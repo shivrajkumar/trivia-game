@@ -13,6 +13,7 @@ export default function App() {
   if (!isLoadingComplete) {
     return null;
   } else {
+    console.disableYellowBox = true;
     return (
       <SafeAreaProvider>
         <Navigation colorScheme={colorScheme} />
