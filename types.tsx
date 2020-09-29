@@ -1,17 +1,23 @@
 export type RootStackParamList = {
-  Root: undefined;
-  NotFound: undefined;
+  HomeScreen: undefined;
+  SelectionScreen: undefined;
+  QuizScreen: undefined;
+  ResultScreen: undefined;
+  LeaderBoardScreen: undefined;
 };
 
-export type BottomTabParamList = {
-  TabOne: undefined;
-  TabTwo: undefined;
-};
+export interface QuestionProps {
+  category: string;
+  correct_answer: string;
+  difficulty: string;
+  incorrect_answers: string[];
+  question: string;
+  type: boolean;
+}
 
-export type TabOneParamList = {
-  TabOneScreen: undefined;
-};
-
-export type TabTwoParamList = {
-  TabTwoScreen: undefined;
-};
+export interface ScoreDataProps {
+  difficulty: string;
+  score: number;
+  uid: string;
+  username: string;
+}
